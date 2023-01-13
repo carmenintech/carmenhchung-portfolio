@@ -94,20 +94,19 @@
         flex-direction: row;
         justify-content: center;
         padding-top: 50px;
-        .animation-container {
-            display: inline-block;
-            background-image: url('https://www.carmenhchung.com/images/mesh-project/drawer2/0.png');
-            background-size: cover;
-            background-position: center;
-            height: 400px;
-            width: 1000px;
-            animation: drawer-animation-open 1s infinite;
-            animation-direction: alternate;
-            animation-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
-            p {
-            text-align: center;
-            }
-        }
+    }
+    .animation-container {
+        display: inline-block;
+        background-image: url('https://www.carmenhchung.com/images/mesh-project/drawer2/0.png');
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        width: 1000px;
+        animation: drawer-animation-open 1s infinite;
+        animation-direction: alternate;
+        animation-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
+        text-align: center;
+    }
     .animation-container-hover-center {
         display: inline-block;
         background-image: url('https://www.carmenhchung.com/images/mesh-project/drawer2/0.png');
@@ -117,13 +116,10 @@
         width: 1000px;
         animation: drawer-animation-close 1s;
         animation-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
-        p {
         text-align: center;
-        }
-        &:hover {
+    }
+    .animation-container-hover-center:hover {
         animation: drawer-animation-open 1s;
         animation-fill-mode: forwards;
-        }
     }
-}
 </style>
