@@ -1,0 +1,129 @@
+<div class="mesh-container">
+  <div class="animation-wrapper">
+    <div class="animation-container-hover-center">
+    </div>
+  </div>
+
+</div>
+
+<style>
+   @keyframes drawer-animation-open {
+    0% {
+        background-image: url('https://www.carmenhchung.com/images/mesh-project/drawer2/0.png');
+    }
+    10% {
+        background-image: url('https://www.carmenhchung.com/images/mesh-project/drawer2/10.png');
+    }
+    20% {
+        background-image: url('https://www.carmenhchung.com/images/mesh-project/drawer2/20.png');
+    }
+    30% {
+        background-image: url('https://www.carmenhchung.com/images/mesh-project/drawer2/30.png');
+    }
+    40% {
+        background-image: url('https://www.carmenhchung.com/images/mesh-project/drawer2/40.png');
+    }
+    50% {
+        background-image: url('https://www.carmenhchung.com/images/mesh-project/drawer2/50.png');
+    }
+    60% {
+        background-image: url('https://www.carmenhchung.com/images/mesh-project/drawer2/60.png');
+    }
+    70% {
+        background-image: url('https://www.carmenhchung.com/images/mesh-project/drawer2/70.png');
+    }
+    80% {
+        background-image: url('https://www.carmenhchung.com/images/mesh-project/drawer2/80.png');
+    }
+    90% {
+        background-image: url('https://www.carmenhchung.com/images/mesh-project/drawer2/90.png');
+    }
+    100% {
+        background-image: url('https://www.carmenhchung.com/images/mesh-project/drawer2/100.png');
+    }
+    }
+
+    @keyframes drawer-animation-close {
+    0% {
+        background-image: url('https://www.carmenhchung.com/images/mesh-project/drawer2/100.png');
+    }
+    10% {
+        background-image: url('https://www.carmenhchung.com/images/mesh-project/drawer2/90.png');
+    }
+    20% {
+        background-image: url('https://www.carmenhchung.com/images/mesh-project/drawer2/80.png');
+    }
+    30% {
+        background-image: url('https://www.carmenhchung.com/images/mesh-project/drawer2/70.png');
+    }
+    40% {
+        background-image: url('https://www.carmenhchung.com/images/mesh-project/drawer2/60.png');
+    }
+    50% {
+        background-image: url('https://www.carmenhchung.com/images/mesh-project/drawer2/50.png');
+    }
+    60% {
+        background-image: url('https://www.carmenhchung.com/images/mesh-project/drawer2/40.png');
+    }
+    70% {
+        background-image: url('https://www.carmenhchung.com/images/mesh-project/drawer2/30.png');
+    }
+    80% {
+        background-image: url('https://www.carmenhchung.com/images/mesh-project/drawer2/20.png');
+    }
+    90% {
+        background-image: url('https://www.carmenhchung.com/images/mesh-project/drawer2/10.png');
+    }
+    100% {
+        background-image: url('https://www.carmenhchung.com/images/mesh-project/drawer2/0.png');
+    }
+    }
+
+    .mesh-container {
+        width: 2000px;
+        height: 1500px;
+        background-image: url('https://www.carmenhchung.com/images/mesh-project/head.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .animation-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 50px;
+        .animation-container {
+            display: inline-block;
+            background-image: url('https://www.carmenhchung.com/images/mesh-project/drawer2/0.png');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            width: 1000px;
+            animation: drawer-animation-open 1s infinite;
+            animation-direction: alternate;
+            animation-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
+            p {
+            text-align: center;
+            }
+        }
+    .animation-container-hover-center {
+        display: inline-block;
+        background-image: url('https://www.carmenhchung.com/images/mesh-project/drawer2/0.png');
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        width: 1000px;
+        animation: drawer-animation-close 1s;
+        animation-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
+        p {
+        text-align: center;
+        }
+        &:hover {
+        animation: drawer-animation-open 1s;
+        animation-fill-mode: forwards;
+        }
+    }
+}
+</style>
